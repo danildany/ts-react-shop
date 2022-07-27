@@ -5,9 +5,7 @@ export function Store() {
     <>
       <div className="container-store">
         {storeItems.map((item, index) => (
-          <div className="wrapper-product" key={index}>
-            <StoreItem {...item} />
-          </div>
+          <StoreItem {...item} key={index} />
         ))}
       </div>
     </>

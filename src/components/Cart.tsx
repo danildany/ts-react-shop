@@ -8,15 +8,18 @@ export function Cart() {
   return (
     <div className="cart-wrapper">
       <div className="cart-container">
-        <button
-          type="button"
-          className="cart-heading"
-          onClick={() => closeCart()}
-        >
-          <ArrowBackOutlined />
-          <span className="heading">Your Cart</span>
-          <span className="cart-num-items">({cartQuantity} items)</span>
-        </button>
+        <div className="head-cart">
+          <button
+            type="button"
+            className="back-cart"
+            onClick={() => closeCart()}
+          >
+            <ArrowBackOutlined />
+            <span className="heading">Your Cart</span>
+            <span className="cart-num-items">({cartQuantity} items)</span>
+          </button>
+        </div>
+
         <div className="product-container">
           {cartItems.map((item, index) => (
             <CartProduct key={index} {...item} />

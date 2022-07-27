@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "/imgs/book.jpg"
+    "name": "Nike Shoes",
+    "price": 250.99,
+    "imgUrl": "/imgs/shoes.png"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "/imgs/computer.jpg"
+    "name": "Laptop Lenovo",
+    "price": 1300.99,
+    "imgUrl": "/imgs/compu.png"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "/imgs/banana.jpg"
+    "name": "Laptop Asus",
+    "price": 1200.99,
+    "imgUrl": "/imgs/compu2.png"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 14000,
-    "imgUrl": "/imgs/car.jpg"
+    "name": "SmartPhone",
+    "price": 800.99,
+    "imgUrl": "/imgs/celu.png"
+  },
+  {
+    "id": 5,
+    "name": "Nike Shoes",
+    "price": 200.99,
+    "imgUrl": "/imgs/shoes2.png"
+  },
+  {
+    "id": 6,
+    "name": "Nike Shoes",
+    "price": 200.99,
+    "imgUrl": "/imgs/shoes2.png"
   }
 ]

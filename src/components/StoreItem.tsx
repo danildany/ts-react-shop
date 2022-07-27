@@ -1,3 +1,4 @@
+import { AddOutlined, RemoveOutlined } from "@material-ui/icons";
 import { useShoppingCart } from "../context/ShopCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 
@@ -18,28 +19,49 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemsProps) {
 
   const quantity = getItemQuantity(id);
   return (
-    <div className="product-box">
-      <h1>{name}</h1>
-      <img src={imgUrl} alt="" />
-      <h3>{formatCurrency(price)}</h3>
-      {quantity === 0 ? (
-        <div className="add-btn">
-          <button onClick={() => increaseCartQuantity(id)}>
-            Add To The cart
-          </button>
+    <div className="card">
+      <div className="imgBx">
+        <img src={imgUrl} alt="" />
+      </div>
+
+      <div className="contentBx">
+        <h2>{name}</h2>
+
+        <div className="size">
+          <h3>Price :</h3>
+          <span>{formatCurrency(price)}</span>
         </div>
-      ) : (
-        <>
-          <div className="product-controls">
-            <button onClick={() => increaseCartQuantity(id)}>+</button>
-            <div>{quantity}</div>
-            <button onClick={() => decreaseCartQuantity(id)}>-</button>
-          </div>
-          <div className="remove-btn">
-            <button onClick={() => removeFromCart(id)}>Remove</button>
-          </div>
-        </>
-      )}
+
+        {quantity === 0 ? (
+          <a className="add-btn" onClick={() => increaseCartQuantity(id)}>
+            Add To The cart
+          </a>
+        ) : (
+          <>
+            <div className="product-controls">
+              <div className="quant-desc">
+                <button
+                  className="minus"
+                  onClick={() => decreaseCartQuantity(id)}
+                >
+                  <RemoveOutlined />
+                </button>
+                <span className="num">{quantity}</span>
+
+                <button
+                  className="plus"
+                  onClick={() => increaseCartQuantity(id)}
+                >
+                  <AddOutlined />
+                </button>
+              </div>
+            </div>
+            <a className="remove-btn" onClick={() => removeFromCart(id)}>
+              Remove
+            </a>
+          </>
+        )}
+      </div>
     </div>
   );
 }
