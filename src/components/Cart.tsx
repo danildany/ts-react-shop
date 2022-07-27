@@ -40,7 +40,7 @@ export function Cart() {
             </div>
             <div className="btn-container">
               <button type="button" className="btn">
-                Pay with Stripe
+                Buy now
               </button>
             </div>
           </div>
