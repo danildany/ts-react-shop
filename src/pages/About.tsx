@@ -14,13 +14,7 @@ export function About() {
           quas expedita! Natus, inventore. Quibusdam blanditiis, obcaecati
           voluptatem ullam cumque rerum aliquid asperiores, eos ad quaerat
           aliquam consectetur sapiente numquam placeat a? In cum vero magni
-          quos, ullam illum vel doloremque dolorem. Repellendus, rem.
-          Exercitationem a aperiam ea, dolore officia error, nemo officiis enim
-          minus harum hic id at ex natus? Similique minus accusamus rerum
-          adipisci? Voluptatum, dicta iusto. Id quibusdam fugit esse fuga. Odit
-          ducimus quaerat provident enim temporibus laborum quidem amet,
-          eligendi, exercitationem labore quae aut? Repellendus non quia nobis
-          nesciunt voluptas esse, temporibus totam, pariatur deserunt culpa.
+          quos.
         </p>
       </div>
     </div>

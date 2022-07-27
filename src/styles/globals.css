@@ -54,7 +54,6 @@ body,
   overflow: hidden;
 }
 .home-img {
-  background-image: url("imgs/back-home.png");
   filter: blur(8px);
   -webkit-filter: blur(8px);
   height: 100%;
@@ -74,7 +73,7 @@ body,
 }
 
 .home-container .box-home h1 {
-  font-size: 250px;
+  font-size: 150px;
   font-weight: 900;
   font-style: italic;
   width: 700px;
@@ -83,7 +82,7 @@ body,
 }
 
 .home-container .box-home h3 {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 900;
 }
 .home-container .box-home .btn-home,
@@ -95,7 +94,7 @@ body,
   text-align: center;
   text-decoration: none;
   font-size: larger;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 20px;
   width: 50%;
 }
@@ -116,7 +115,7 @@ body,
 .about-container .box-about {
   background-color: #fff;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -204,13 +203,16 @@ body,
 }
 
 .cart-bottom .btn-container .btn {
-  width: 100%;
+  color: #fff;
   background-color: #1bbfe9;
-  color: #232323;
-  border-radius: 3px;
-  padding: 10px 1px;
-  font-size: large;
-  cursor: pointer;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
 }
 .product {
   display: flex;
@@ -291,8 +293,8 @@ body,
 
 .container-store .card {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   margin: 10px;
   background: #232323;
   border-radius: 20px;
@@ -312,7 +314,7 @@ body,
 }
 
 .container-store .card:hover:before {
-  clip-path: circle(400px at 80% -20%);
+  clip-path: circle(300px at 80% -20%);
 }
 
 .container-store .card:after {
@@ -361,12 +363,12 @@ body,
 }
 
 .container-store .card:hover .contentBx {
-  height: 210px;
+  height: 250px;
 }
 
 .container-store .card .contentBx h2 {
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -390,7 +392,7 @@ body,
 .container-store .card .contentBx .size h3 {
   color: white;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 10px;
