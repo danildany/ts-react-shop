@@ -365,6 +365,7 @@ body,
 
 .container-store .card:hover .contentBx {
   height: 250px;
+  background-color: rgba(0, 0, 0, 0.664);
 }
 
 .container-store .card .contentBx h2 {
